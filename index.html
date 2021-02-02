@@ -14,8 +14,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/51088cb106.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>Olivia Povey</title>
+    <link rel="icon" href="./images/olivia.png" type="image/x-icon" />
   </head>
   <body>
     <div class="header" id="myHeader">
@@ -63,18 +68,47 @@
         <h1>Olivia Povey</h1>
         <h2>Technical Intern at IN4.0 Group</h2>
       </div>
-      <img
-        class="img-thumbnail"
-        src="images/oliviapovey.JPG"
-        alt="Olivia Povey"
-      />
-      <h3>About</h3>
-      <h3>Experience</h3>
-      <h3>Education</h3>
-      <div class="side-projects">
-        <h3>Certifications</h3>
-        <h3>Volunteer</h3>
-        <h3>Skills</h3>
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-4">
+            <div class="photo">
+              <img
+                class="img-fluid"
+                src="images/oliviapovey.JPG"
+                alt="Olivia Povey"
+              />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="about"><h3>About</h3></div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <div class="ex-photo"><img src="./images/experience.jpg" /></div>
+          </div>
+          <div class="col-4">
+            <div class="experience"><h3>Experience</h3></div>
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4">
+            <div class="education"><h3>Education</h3></div>
+          </div>
+          <div class="col-4">
+            <div class="edu-photo"><img src="./images/education.jpg" /></div>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            <div class="side-photo">
+              <img src="./images/sideprojects.jpg" />
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="side-projects"><h3>Side Projects</h3></div>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="footer py-3">
@@ -85,14 +119,14 @@
             href="https://www.linkedin.com/in/oliviapovey/"
             target="_blank"
             class="social-icon-link w-inline-block"
-            >LinkedIn</a
-          >
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
           <a
             href="https://www.instagram.com/oliviarpo/"
             target="_blank"
             class="social-icon-link w-inline-block"
-            >Instagram</a
-          >
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
       </div>
     </footer>
