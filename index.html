@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<!-- Entered basic template using Prettier extension ! then tab -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Added Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -10,19 +12,25 @@
       crossorigin="anonymous"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Used Google Fonts Inter -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <!-- Added icons from fontawesome -->
     <script
       src="https://kit.fontawesome.com/51088cb106.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Linked to css file -->
     <link rel="stylesheet" href="src/styles.css" />
+    <!-- Changed title of page -->
     <title>Olivia Povey</title>
-    <link rel="icon" href="./images/olivia.png" type="image/x-icon" />
+    <!-- Addedd icon for page -->
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
   </head>
   <body>
+    <!-- Navigation bar -->
     <div class="header" id="myHeader">
       <div class="pos-f-t">
         <div class="collapse" id="navbarToggleExternalContent">
@@ -30,19 +38,24 @@
             <div class="col"><h1 class="display-1">Olivia Povey</h1></div>
             <div class="col-md-auto"></div>
             <div class="col col-lg-2">
-              <h5 class="text-dark h4">Menu</h5>
+              <h5 class="text-dark h4">Contact</h5>
+              <!-- Core links -->
               <ul class="list-unstyled">
-                <li><span class="text-muted">Home</span></li>
-                <li><span class="text-muted">About</span></li>
-                <li><span class="text-muted">Get in touch</span></li>
-              </ul>
-            </div>
-            <div class="col col-lg-2">
-              <h5 class="text-dark h4">Portfolio</h5>
-              <ul class="list-unstyled">
-                <li><span class="text-muted">Experience</span></li>
-                <li><span class="text-muted">Education</span></li>
-                <li><span class="text-muted">Side projects</span></li>
+                <li>
+                  <span class="text-muted"
+                    ><a
+                      href="https://www.linkedin.com/in/oliviapovey/"
+                      target="_blank"
+                      class="social-icon-link w-inline-block"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/oliviarpo/"
+                      target="_blank"
+                      class="social-icon-link w-inline-block"
+                      ><i class="fab fa-instagram"></i></a
+                  ></span>
+                </li>
               </ul>
             </div>
           </div>
@@ -63,54 +76,209 @@
         </nav>
       </div>
     </div>
+    <!-- Main content -->
     <div class="main">
-      <div class="hero-text">
-        <h1>Olivia Povey</h1>
-        <h2>Technical Intern at IN4.0 Group</h2>
-      </div>
-      <div class="container">
-        <div class="row justify-content-start">
-          <div class="col-4">
-            <div class="photo">
-              <img
-                class="img-fluid"
-                src="images/oliviapovey.JPG"
-                alt="Olivia Povey"
-              />
+      <!-- Header -->
+      <header>
+        <div class="header-content">
+          <div class="header-content-inner">
+            <h1>Olivia Povey</h1>
+            <h5>Technical Intern <i class="fas fa-code"></i> IN4.0 Group</h5>
+          </div>
+        </div>
+      </header>
+
+      <br />
+
+      <!-- Intro section -->
+      <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <h3>About</h3>
+                <i class="fas fa-angle-double-down"></i>
+                <h5>
+                  Olivia currently is working towards her <br />AWS Cloud
+                  Practitioner certification
+                </h5>
+                <p>
+                  Olivia is adept in coordinating and managing cross-functional
+                  teams. She has worked in a variety of industries with the
+                  fixed goal of striving for customer and client satisfaction.
+                </p>
+                <p>
+                  Olivia has a passion for learning about culural nuances, and
+                  faciliates her learning with a passion for travel and trying
+                  new experiences. This feeds in to a lot her learning and
+                  development as she looks to expand her knowledge of business
+                  capabilities and innovative technology.
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card img-fluid">
+                  <img
+                    class="card-img-top"
+                    src="images/oliviapovey.JPG"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="about"><h3>About</h3></div>
-          </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-4">
-            <div class="ex-photo"><img src="./images/experience.jpg" /></div>
-          </div>
-          <div class="col-4">
-            <div class="experience"><h3>Experience</h3></div>
-          </div>
-        </div>
-        <div class="row justify-content-end">
-          <div class="col-4">
-            <div class="education"><h3>Education</h3></div>
-          </div>
-          <div class="col-4">
-            <div class="edu-photo"><img src="./images/education.jpg" /></div>
-          </div>
-        </div>
-        <div class="row justify-content-around">
-          <div class="col-4">
-            <div class="side-photo">
-              <img src="./images/sideprojects.jpg" />
+      </section>
+
+      <br />
+
+      <!-- Experience section -->
+      <section class="experience">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card img-fluid">
+                  <img
+                    class="card-img-top"
+                    src="images/experience.jpg"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <h3 id="experience">Experience</h3>
+                <i class="fas fa-angle-double-down"></i>
+                <h5>
+                  Currently she is a Technical Intern at <br />IN4.0 Group
+                </h5>
+                <ul>
+                  <li>
+                    2018 - 2019 Customer Service Advisor,
+                    <strong>TUI</strong>
+                  </li>
+                  <li>2017 - 2018 Resort Manager, <strong>TUI</strong></li>
+                  <li>
+                    2016 - 2017 Resort Supervisor,
+                    <strong>TUI</strong>
+                  </li>
+                  <li>2015 - 2016 Host, <strong>TUI</strong></li>
+
+                  <li>
+                    2014 - 2015 Marketing Intern,
+                    <strong>Western Light Pictures</strong>
+                  </li>
+
+                  <li>
+                    2013 - 2014 Social Media Coordinator,
+                    <strong>Falmouth Univeristy</strong>
+                  </li>
+
+                  <li>
+                    2011 - 2012 Office Administrator,
+                    <strong>Fourth Hospitality</strong>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-4">
-            <div class="side-projects"><h3>Side Projects</h3></div>
+        </div>
+      </section>
+
+      <br />
+
+      <!-- Education section -->
+
+      <section class="education">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <h3 id="education">Education</h3>
+                <i class="fas fa-angle-double-down"></i>
+                <h5>
+                  Recently graduated from <br />Alliance Manchester Business
+                  School
+                </h5>
+
+                <h6>
+                  2019 - 2020 MSc International Business and Management,
+                  <br />The University of Manchester
+                </h6>
+                <h6>2012 - 2015 BA(Hons) Film, <br />Falmouth University</h6>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card img-fluid">
+                  <img
+                    class="card-img-top"
+                    src="images/education.jpg"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <br />
+
+      <!-- Side Projects section -->
+
+      <section class="education">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card img-fluid">
+                  <img
+                    class="card-img-top"
+                    src="images/sideprojects.jpg"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <h3>Side Projects</h3>
+                <i class="fas fa-angle-double-down"></i>
+                <h5>
+                  Olivia is learning how to code, <br />whilst developing web
+                  applications
+                </h5>
+                <ol>
+                  <li>
+                    <a
+                      href="https://www.shecodes.io/students/235-olivia-povey-226ca199-c421-49b1-9f1b-d8f4369c197a"
+                      >👩‍💻 SheCodes Workshop</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://www.shecodes.io/students/246-olivia-povey"
+                      >👩‍💻 SheCodes Plus</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://github.com/oliviarpo"
+                      ><i class="fab fa-github"></i> GitHub</a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br />
     </div>
+    <!-- Footer -->
     <footer class="footer py-3">
       <div class="container-footer">
         <span class="text-muted">Olivia Povey</span>
@@ -130,6 +298,7 @@
         </div>
       </div>
     </footer>
+    <!-- JavaScript links -->
     <script src="src/script.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
