@@ -2,10 +2,11 @@ body {
   font-family: "Inter", sans-serif;
   background-image: linear-gradient(
     to top,
-    #f3e7e9 0%,
+    #e7ebf3 0%,
     #e3eeff 99%,
     #e3eeff 100%
   );
+  background-size: cover;
 }
 
 img {
@@ -51,6 +52,10 @@ footer {
   top: 0;
 }
 
+.time {
+  margin-left: 10px;
+}
+
 .main {
   margin: 0, 300px;
   text-align: center;
@@ -66,4 +71,12 @@ footer {
 .card li {
   text-align: left;
   font-size: 16px;
+}
+
+.contact {
+  margin: 30px;
+}
+
+.contact-form {
+  text-align: left;
 }

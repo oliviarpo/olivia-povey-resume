@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- Entered basic template using Prettier extension ! then tab -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Added Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Used Google Fonts Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Added icons from fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/51088cb106.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Linked to css file -->
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Changed title of page -->
+    <title>Olivia Povey</title>
+    <!-- Addedd icon for page -->
+    <link rel="icon" href="./images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <div class="header" id="myHeader">
+      <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="row">
+            <div class="col"><h1 class="display-1">Olivia Povey</h1></div>
+            <div class="col-md-auto"></div>
+            <div class="col col-lg-2">
+              <h5 class="text-dark h4">Menu</h5>
+              <!-- Core links -->
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="contact.html" title="Go to the contact form"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <span class="text-muted"
+                    ><a
+                      href="https://www.linkedin.com/in/oliviapovey/"
+                      target="_blank"
+                      class="social-icon-link w-inline-block"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/oliviarpo/"
+                      target="_blank"
+                      class="social-icon-link w-inline-block"
+                      ><i class="fab fa-instagram"></i></a
+                  ></span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-light">
+          <h1>OP</h1>
+          <div class="time"><span id="datetime"></span></div>
+          <button
+            class="navbar-toggler ml-auto mr-1"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </div>
+    <!-- Main content -->
+    <div class="main">
+      <!-- Header -->
+      <header>
+        <div class="header-content">
+          <div class="header-content-inner">
+            <h1>Olivia Povey</h1>
+            <h5>Technical Intern <i class="fas fa-code"></i> IN4.0 Group</h5>
+          </div>
+        </div>
+      </header>
+
+      <br />
+
+      <!-- Intro section -->
+      <section class="contact">
+        <div class="contact-form" id="contact">
+          <form>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault01">First name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault01"
+                  placeholder="Enter your first name here..."
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Last name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault02"
+                  placeholder="Enter your last name here..."
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03">City</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefault03"
+                  placeholder="Let us know where you are in the world..."
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEmail3"
+                  placeholder="Enter your email here..."
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="invalidCheck2"
+                />
+                <label class="form-check-label" for="invalidCheck2">
+                  Check this box if you would like to receive our weekly
+                  newsletter
+                </label>
+              </div>
+            </div>
+            <button
+              class="btn btn-primary"
+              type="submit"
+              onClick="validateForm()"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <br />
+    </div>
+    <!-- Footer -->
+    <footer class="footer py-3">
+      <div class="container-footer">
+        <span class="text-muted">Olivia Povey</span>
+        <div class="float-right">
+          <a
+            href="https://www.linkedin.com/in/oliviapovey/"
+            target="_blank"
+            class="social-icon-link w-inline-block"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/oliviarpo/"
+            target="_blank"
+            class="social-icon-link w-inline-block"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript links -->
+    <script src="src/script.js"></script>
+    <script src="src/contact.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

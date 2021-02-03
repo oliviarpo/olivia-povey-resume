@@ -24,6 +24,7 @@
     ></script>
     <!-- Linked to css file -->
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- Changed title of page -->
     <title>Olivia Povey</title>
     <!-- Addedd icon for page -->
@@ -38,9 +39,15 @@
             <div class="col"><h1 class="display-1">Olivia Povey</h1></div>
             <div class="col-md-auto"></div>
             <div class="col col-lg-2">
-              <h5 class="text-dark h4">Contact</h5>
+              <h5 class="text-dark h4">Menu</h5>
               <!-- Core links -->
               <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="contact.html" title="Go to the contact form"
+                    >Contact</a
+                  >
+                </li>
                 <li>
                   <span class="text-muted"
                     ><a
@@ -62,6 +69,7 @@
         </div>
         <nav class="navbar navbar-light">
           <h1>OP</h1>
+          <div class="time"><span id="datetime"></span></div>
           <button
             class="navbar-toggler ml-auto mr-1"
             type="button"
